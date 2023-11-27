@@ -28,15 +28,5 @@ const mincost = (arr) => {
     return totalCost;
 };
 
-// Get input from the user using prompt
-const inputString = prompt("Enter the lengths of ropes separated by commas (e.g., 4,3,2,6):");
-
-// Convert the input string to an array of integers
-const inputArray = inputString.split(',').map(Number);
-
-// Call the mincost function with the input array
-const result = mincost(inputArray);
-
-// Display the result using alert
-alert( result);
+module.exports = mincost;
 
